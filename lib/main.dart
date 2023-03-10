@@ -20,6 +20,33 @@ class ImagePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      children: [
+        Text(
+          'Try Again...',
+          style: TextStyle(
+            fontSize: 42,
+            color: Colors.white,
+          ),
+        ),
+        Row(
+          children: [
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: Image.asset('images/image-1.png'),
+              ),
+            ),
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: Image.asset('images/image-1.png'),
+              ),
+            ),
+          ],
+        )
+      ],
+    );
   }
 }
